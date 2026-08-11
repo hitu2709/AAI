@@ -1,0 +1,1 @@
+customer_query = "I received the wrong product yesterday and I want a replacement."

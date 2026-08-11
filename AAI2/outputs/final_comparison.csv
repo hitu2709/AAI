@@ -1,0 +1,30 @@
+Prompt,Response,Latency,Tokens,ROUGE,BERTScore,Cosine,Judge
+Role,"I'm so sorry to hear that you received the wrong product. I can imagine how frustrating that must be for you. I'm here to help and want to ensure that you receive the correct product as soon as possible.
+
+To better assist you, could you please provide me with some more information? Could you please tell me:
+
+1. Your order number, so I can look into this further?
+2. The product you were expecting to receive, and the product you actually received instead?
+3. Was the incorrect product in a sealed or opened condition when you received it?
+
+Once I have this information, I'll be happy to suggest a suitable solution for you. If necessary, I can also escalate this issue to my supervisor to ensure that it's resolved promptly.
+
+Please know that we value your business and apologize again for the inconvenience caused. Your satisfaction is our top priority, and I'm committed to making things right for you.",2.0546135902404785,262.0,0.1311475409836065,0.8302088975906372,0.35751945,9
+Instruction,"I'm so sorry to hear that you received the wrong product. That must be really frustrating for you.
+
+To better assist you, could you please provide me with your order number and a description of the product you were supposed to receive, as well as the product you actually received? This will help me to look into this issue further.
+
+Once I have this information, I can explain the replacement process to you. Generally, we will send a replacement product to you as soon as possible, and we may also provide a return shipping label for you to send back the incorrect product.
+
+If for any reason we are unable to resolve this issue to your satisfaction, I want to assure you that we have an escalation process in place. You can ask to speak with a supervisor or manager who will work with you to find a solution.
+
+Please know that your satisfaction is our top priority, and I'm here to help you every step of the way. Thank you for bringing this to my attention, and I look forward to resolving this issue for you.",1.0105111598968506,292.0,0.125,0.8266519904136658,0.49110556,9
+Contextual,"I apologize for the mistake. Since you received the wrong product yesterday, you are still within the 7-day replacement window. I'd be happy to assist you with the replacement process. Can you please provide me with your order number and a photo of the incorrect product you received? I'll help facilitate the exchange and get the correct product sent to you as soon as possible.",0.92042875289917,143.0,0.2528735632183908,0.8545519709587097,0.51046187,9
+Structured,"I apologize for the inconvenience you've experienced with receiving the wrong product. I'm happy to assist you with the replacement process.
+
+To initiate the replacement, I'll need some information from you. Could you please provide me with your Order ID and the name of the product you were supposed to receive? Additionally, it would be helpful if you could send me a photo of the incorrect product you received.
+
+Once I have this information, I'll be able to proceed with the replacement process and ensure that you receive the correct product as soon as possible. If I'm unable to locate your order details, I may need to escalate the issue to our dedicated support team to further assist you.
+
+Please let me know if you have any questions or concerns, and I'll do my best to resolve this issue for you.",0.7166204452514648,251.0,0.1566265060240964,0.8478368520736694,0.5637914,9
+DSPy Optimized,"I apologize for the mistake. To facilitate a replacement, I'll need some information from you. Could you please provide your order number and the name of the product you were supposed to receive? Additionally, have you opened or used the incorrect product in any way? Once I have this information, I'll guide you through the next steps to get the correct product to you as soon as possible.",,,0.24719101123595505,0.8504722714424133,0.5756951570510864,9

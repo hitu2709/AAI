@@ -1,0 +1,10 @@
+groq
+python-dotenv
+pandas
+matplotlib
+bert-score
+rouge-score
+sentence-transformers
+scikit-learn
+promptlayer
+dspy
