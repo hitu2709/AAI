@@ -1,0 +1,8 @@
+pandas
+openpyxl
+scikit-learn
+matplotlib
+seaborn
+python-dotenv
+langchain
+langchain-groq
