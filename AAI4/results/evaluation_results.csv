@@ -1,0 +1,21 @@
+Query No,Category,Query,Expected Tools,Selected Tools,Tool Selection Correct,Error,Error Details,Input Tokens,Output Tokens,Total Tokens,MCP Communication Overhead (s),Unnecessary Tool,Response Time (s)
+1,Calculator,What is 25 + 75?,calculator,calculator,Yes,No,,1760,71,1831,0.0333,No,1.3891
+2,Calculator,Calculate 125 * 8,calculator,calculator,Yes,No,,1757,66,1823,0.0317,No,1.3142
+3,Calculator,What is 1000 / 25?,calculator,calculator,Yes,No,,1766,96,1862,0.0273,No,2.3191
+4,Calculator,Calculate (45 + 15) * 2,calculator,calculator,Yes,No,,1768,106,1874,0.025,No,1.1688
+5,Calculator,What is 2^10?,calculator,calculator,Yes,No,,1758,77,1835,0.0269,No,1.1957
+6,Wikipedia,Who was Albert Einstein and what were his major contributions?,wikipedia_search,wikipedia_search,Yes,No,,6378,840,7218,1.2767,No,31.4923
+7,Wikipedia,What is the history of the Internet?,wikipedia_search,wikipedia_search,Yes,No,,7744,1140,8884,1.3931,No,64.7289
+8,Wikipedia,Tell me about the history and creator of the Python programming language.,wikipedia_search,wikipedia_search,Yes,No,,12478,1430,13908,16.5771,No,88.8066
+9,Wikipedia,Who was Alan Turing and what was his contribution to computer science?,wikipedia_search,wikipedia_search,Yes,No,,10811,1355,12166,3.0388,No,82.6201
+10,Wikipedia,What is the history and origin of artificial intelligence?,wikipedia_search,wikipedia_search,Yes,No,,10807,1601,12408,2.7974,No,72.4025
+11,No Tool,What is the capital of India?,,wikipedia_search,No,No,,5099,921,6020,1.7285,Yes,64.9435
+12,No Tool,Explain what machine learning means.,,,Yes,No,,841,142,983,0,No,0.5792
+13,No Tool,What are the advantages of cloud computing?,,,Yes,No,,843,148,991,0,No,1.3863
+14,No Tool,What is the difference between AI and ML?,,,Yes,No,,844,149,993,0,No,0.8777
+15,No Tool,Give me three uses of databases.,,,Yes,No,,842,164,1006,0,No,0.6762
+16,Mixed,Calculate 50 * 20 and tell me about Alan Turing.,"calculator, wikipedia_search","calculator, wikipedia_search",Yes,No,,3882,512,4394,1.2579,No,3.9661
+17,Mixed,What is 100 / 4 and who was Albert Einstein?,"calculator, wikipedia_search","calculator, wikipedia_search",Yes,No,,2781,298,3079,0.4311,No,14.392
+18,Ambiguous,Is Python a programming language and when was it created?,wikipedia_search,wikipedia_search,Yes,No,,12414,1505,13919,9.0907,No,95.3838
+19,Mixed,Calculate the square of 25 and explain artificial intelligence.,calculator,calculator,Yes,No,,1763,342,2105,0.0988,No,13.4955
+20,Mixed,Tell me about the Internet and calculate 250 + 750.,"calculator, wikipedia_search","calculator, wikipedia_search",Yes,No,,5065,666,5731,3.5575,No,33.9686

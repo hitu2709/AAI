@@ -6,3 +6,5 @@ langchain
 langchain-groq
 langgraph
 langchain-mcp-adapters
+
+matplotlib

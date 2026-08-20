@@ -1,9 +1,10 @@
 import asyncio
-from dotenv import load_dotenv
 
+from dotenv import load_dotenv
 from langchain_groq import ChatGroq
-from langchain_mcp_adapters.client import MultiServerMCPClient
 from langgraph.prebuilt import create_react_agent
+
+from client import create_mcp_client
 
 
 load_dotenv()
@@ -11,18 +12,16 @@ load_dotenv()
 
 async def main():
 
-    # Connect to MCP Server
-    client = MultiServerMCPClient(
-        {
-            "calculator_wikipedia": {
-                "transport": "streamable_http",
-                "url": "http://127.0.0.1:8000/mcp"
-            }
-        }
-    )
+    # -----------------------------
+    # Create MCP Client
+    # -----------------------------
 
+    client = create_mcp_client()
 
+    # -----------------------------
     # Discover MCP Tools
+    # -----------------------------
+
     tools = await client.get_tools()
 
     print("\nAvailable MCP Tools:")
@@ -30,51 +29,73 @@ async def main():
     for tool in tools:
         print("-", tool.name)
 
+    # -----------------------------
+    # Initialize Groq
+    # -----------------------------
 
-    # Initialize Groq LLM
     llm = ChatGroq(
-        model="llama-3.3-70b-versatile",
-        temperature=0
-    )
+    model="openai/gpt-oss-20b",
+    temperature=0,
+    max_tokens=250
+)
 
+    # -----------------------------
+    # Bind MCP Tools to LLM
+    # -----------------------------
 
+    llm_with_tools = llm.bind_tools(tools)
+
+    # -----------------------------
     # Create LangGraph Agent
-    agent = create_react_agent(
-        llm,
-        tools
-    )
+    # -----------------------------
 
+    agent = create_react_agent(
+        model=llm_with_tools,
+        tools=tools
+    )
 
     print("\n===================================")
-    print(" Agentic MCP Chatbot Started")
-    print(" Type 'exit' to stop")
-    print("===================================\n")
+    print("     MCP Agentic Chatbot")
+    print("===================================")
+    print("Type 'exit' to stop.\n")
 
+    # -----------------------------
+    # Chat Loop
+    # -----------------------------
 
     while True:
 
         query = input("You: ")
 
-        if query.lower() in ["exit", "quit", "stop"]:
-            print("Chatbot stopped.")
+        if query.lower() in [
+            "exit",
+            "quit",
+            "stop"
+        ]:
             break
 
+        try:
 
-        response = await agent.ainvoke(
-            {
-                "messages": [
-                    {
-                        "role": "user",
-                        "content": query
-                    }
-                ]
-            }
-        )
+            response = await agent.ainvoke(
+                {
+                    "messages": [
+                        {
+                            "role": "user",
+                            "content": query
+                        }
+                    ]
+                }
+            )
 
+            answer = response["messages"][-1].content
 
-        print("\nAssistant:")
-        print(response["messages"][-1].content)
-        print()
+            print("\nAssistant:")
+            print(answer)
+            print()
+
+        except Exception as e:
+
+            print("\nError:", e)
 
 
 if __name__ == "__main__":

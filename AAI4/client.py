@@ -1,10 +1,15 @@
-from fastmcp import Client
+from langchain_mcp_adapters.client import MultiServerMCPClient
 
 
-async def get_mcp_client():
+def create_mcp_client():
 
-    client = Client(
-        "http://127.0.0.1:8000/mcp"
+    client = MultiServerMCPClient(
+        {
+            "calculator_wikipedia": {
+                "transport": "streamable_http",
+                "url": "http://127.0.0.1:8000/mcp"
+            }
+        }
     )
 
     return client

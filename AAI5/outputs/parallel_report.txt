@@ -1,0 +1,31 @@
+
+RESEARCH REPORT: Artificial Intelligence in Healthcare
+
+1. INTRODUCTION
+Artificial Intelligence (AI) is rapidly transforming healthcare, turning vast amounts of clinical data into actionable insights that improve patient outcomes, streamline operations, and reduce costs. From computer‑aided diagnostics that detect early signs of disease in imaging and pathology slides, to predictive analytics that flag high‑risk patients before complications arise, AI empowers clinicians with faster, more accurate decision‑support tools. Machine‑learning algorithms also enable personalized medicine—tailoring drug regimens and treatment plans to an individual’s genetic profile—and drive efficiency in administrative
+
+2. KEY CONCEPTS
+
+
+3. APPLICATIONS
+## Artificial Intelligence in Healthcare – Key Applications
+
+Artificial Intelligence (AI) has moved from a futuristic buzzword to a practical tool that is
+
+4. ADVANTAGES
+## Artificial Intelligence in Healthcare: Key Advantages
+
+| Domain | How AI Helps | Real‑World Examples |
+|--------|--------------|---------------------|
+| **Early & Accurate Diagnosis** | • Detects subtle patterns in imaging, pathology, and genom
+
+5. CHALLENGES AND LIMITATIONS
+## Artificial Intelligence in Healthcare: Key Challenges & Limitations
+
+Artificial Intelligence (AI) promises to transform every facet of healthcare—from early disease detection to personalized treatment plans and operational efficiency. Yet, the road to widespread, safe, and equitable deployment is riddled with technical, ethical, regulatory, and practical obstacles. Below
+
+6. RECENT DEVELOPMENTS
+
+
+7. CONCLUSION
+Artificial Intelligence is reshaping healthcare by turning vast
