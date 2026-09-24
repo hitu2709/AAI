@@ -1,0 +1,17 @@
+MAJOR PROJECT GUIDELINES
+
+The Major Project is carried out under the supervision of an assigned faculty guide.
+Students are expected to identify a suitable problem, conduct a literature review, design the proposed solution, implement the system and evaluate the results.
+
+The project report should include:
+1. Introduction
+2. Literature Review
+3. Problem Definition
+4. Proposed Methodology
+5. Implementation
+6. Results and Evaluation
+7. Conclusion
+8. References
+
+Students must periodically present their progress to the project guide.
+The final evaluation consists of project demonstration, report evaluation, presentation and viva voce.

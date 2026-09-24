@@ -1,0 +1,35 @@
+COURSE CATALOG
+
+Course: Machine Learning
+Semester: V
+Topics:
+Supervised Learning
+Linear Regression
+Logistic Regression
+Decision Trees
+Support Vector Machines
+Clustering
+Model Evaluation
+
+Course: Agentic Artificial Intelligence
+Semester: VII
+Topics:
+Agentic AI Foundations
+Prompting and Reasoning
+Agentic Workflows
+Tool-Using Agents
+Agentic RAG
+Multi-Agent Systems
+Agent Deployment
+
+Course: Data Structures
+Semester: III
+Topics:
+Arrays
+Linked Lists
+Stacks
+Queues
+Trees
+Graphs
+Searching
+Sorting
