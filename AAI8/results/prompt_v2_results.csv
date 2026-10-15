@@ -1,0 +1,11 @@
+﻿test_id,prompt_version,query,expected_tool,actual_tool,all_tools_called,tool_call_correct,answer_check_passed,task_success,latency_seconds,tokens,prompt_tokens,completion_tokens,output
+T1,V2,Calculate 12 + 8.,calculator,calculator,calculator,1,1,1,1.393,755,668,87,The result of 12 + 8 is 20.
+T2,V2,What is 144 divided by 12?,calculator,calculator,calculator,1,1,1,1.13,751,674,77,144 divided by 12 equals **12**.
+T3,V2,Calculate 15 multiplied by 7.,calculator,calculator,calculator,1,1,1,1.026,760,670,90,15 × 7 = 105.
+T4,V2,What is 100 minus 37?,calculator,calculator,calculator,1,1,1,1.022,752,670,82,The result of 100 minus 37 is **63**.
+T5,V2,Calculate (8 + 4) * 3.,calculator,calculator,calculator,1,1,1,1.544,780,680,100,The result of \((8 + 4) \times 3\) is **36**.
+T6,V2,Give me the details for student S069.,student_info,student_info,student_info,1,1,1,2.553,823,694,129,Here are the details for student **S069**:  - **Name:** Hitanshu Shah   - **Roll Number:** S069   - **Department:** Computer Engineering   - **SAP ID:** 60018240010
+T7,V2,Which department does student S055 belong to?,student_info,student_info,student_info,1,1,1,0.87,790,693,97,Student S055 belongs to the **Computer Engineering** department.
+T8,V2,What is the SAP ID of student S069?,student_info,student_info,student_info,1,1,1,5.891,790,696,94,The SAP ID for student **S069** is **60018240010**.
+T9,V2,Calculate 10 / 0 and explain why it is invalid.,calculator,calculator,calculator,1,1,1,6.046,855,685,170,"The calculation cannot be performed because it involves division by zero. In arithmetic, dividing any number by zero is undefined: there is no number that multiplied by 0 gives the dividend (here, 10). Consequently, the calculator reports an error and refuses to compute the expression."
+T10,V2,Hello! How are you?,none,none,none,1,1,1,4.112,357,317,40,"Hello! I'm doing great, thank you. How can I assist you today?"

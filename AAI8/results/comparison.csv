@@ -1,0 +1,7 @@
+﻿metric,prompt_v1,prompt_v2
+Task Success Rate (%),70.0,100.0
+Tool-Calling Accuracy (%),70.0,100.0
+Average Latency (s),0.929,2.559
+Total Token Consumption,4524,7413
+Token Measurements Available,10/10,10/10
+Failed Tasks,3,0
